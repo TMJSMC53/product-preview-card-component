@@ -60,6 +60,7 @@ body {
   line-height: 1.5;
   font-size: 1.4rem;
   background-color: var(--clr-primary-300);
+  font-family: var(--ff-primary);
 }
 
 /* A elements that don't have a class get default styles */
@@ -98,9 +99,126 @@ svg {
   margin: 2.8rem 1.6rem;
 }
 
-.img {
+.img-mobile {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.img-desktop {
+  display: none;
+}
+
+.content {
+  background: var(--clr-neutral-300);
+  padding: 2.4rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.overline {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: var(--fw-regular);
+  font-size: 1.2rem;
+  color: var(--clr-neutral-200);
+  padding-bottom: 1.2rem;
+}
+
+.content h1 {
+  font-family: var(--ff-headers);
+  font-size: var(--fs-400);
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
+  line-height: 32px;
+  padding-bottom: 1.6rem;
+}
+
+.content p {
+  font-size: 1.4rem;
+  color: var(--clr-neutral-200);
+  line-height: 23px;
+  padding-bottom: 2.4rem;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1.9rem;
+  padding-bottom: 2rem;
+}
+
+.price-lg {
+  font-family: var(--ff-headers);
+  font-size: var(--fs-400);
+  color: var(--clr-primary-400);
+  font-weight: var(--fw-bold);
+}
+
+.price-sm {
+  text-decoration: line-through;
+  font-size: 1.3rem;
+  color: var(--clr-neutral-200);
+  font-weight: var(--fw-regular);
+  line-height: 23px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.5rem 9.2rem;
+  background: var(--clr-primary-400);
+  color: var(--clr-neutral-300);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.cart {
+  width: 14.3px;
+  height: 16px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 45rem;
+    margin: 17.5rem auto;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop {
+    display: block;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .content {
+    padding: 3.2rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .overline {
+    padding: 0;
+  }
+
+  .content h1 {
+    padding-top: 2rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .btn {
+    padding: 1.5rem 6.2rem 1.6rem 6.3rem;
+    height: 4.8rem;
+  }
 }
 
 /* attribution section */
