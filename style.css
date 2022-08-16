@@ -139,6 +139,7 @@ svg {
   color: var(--clr-neutral-200);
   line-height: 23px;
   padding-bottom: 2.4rem;
+  font-weight: var(--fw-regular);
 }
 
 .price-container {
@@ -175,6 +176,7 @@ svg {
   border-radius: 8px;
   border: none;
   outline: none;
+  line-height: 17.07px;
 }
 
 .cart {
